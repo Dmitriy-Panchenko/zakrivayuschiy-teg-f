@@ -111,15 +111,15 @@
   animation: finalFlash 3s ease-in-out 1;
 }
 
-.content__img:hover {
+/* .content__img:hover {
   animation-play-state: paused;
   transform: scale(1.02);
   transition: transform 0.3s ease;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .content__img:hover {
   animation: none;
   filter: none;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
