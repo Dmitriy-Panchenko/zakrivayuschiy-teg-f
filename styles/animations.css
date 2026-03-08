@@ -9,13 +9,10 @@
 
 @keyframes sparks-appear {
   0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  100% {
     opacity: 0;
-    transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -26,23 +23,24 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s forwards;
+  animation: heart-scale 0.3s ease-in 0.1s;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-appear 0.3s ease-in 0.3s forwards;
+  animation: sparks-appear 0.3s ease-in 0.3s;
 }
 
 .contour {
   transition: fill linear 0.1s;
 }
 
-.like-icon:active .contour {
+.like-icon.is-liked .contour {
   fill: var(--contour-color);
   transition: fill linear 0.3s 0.06s;
 }
 
 .core {
+  fill: transparent;
   transition: fill linear 0.3s 0.03s;
 }
 
@@ -62,6 +60,7 @@
 }
 
 .main-body {
+  fill: transparent;
   transition: fill linear 0.3s;
 }
 
@@ -77,15 +76,16 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
-  transition: fill linear 0.3s 0.05s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
+  transition: fill linear 0.3s 0.06s;
 }
 
 /*творческий попытки фантазии вместо добавления своего контента*/
-
+/* 
 .start {
   animation: fadeIn 1.5s ease-out forwards;
 }
@@ -109,7 +109,7 @@
 }
 .final {
   animation: finalFlash 3s ease-in-out 1;
-}
+} */
 
 /* .content__img:hover {
   animation-play-state: paused;
@@ -118,8 +118,8 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 } */
 
-.content__img:hover {
+/* .content__img:hover {
   animation: none;
   filter: none;
   transition: 0.5s ease;
-}
+} */
