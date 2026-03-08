@@ -1,5 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root {/*--font-family-inter --font-family-press*/
+:root {
+  /*--font-family-inter --font-family-press*/
   --font-family-main: "Inter", sans-serif;
   --font-family-pix: "PressStart2P", fantasy;
   --font-weight-regular: 400;
@@ -22,12 +23,15 @@
   --button-mix-mode: difference;
 
   /*стили для img*/
-  --filter-start: brightness(1.15) contrast(1.2) saturate(1.3) hue-rotate(180deg);
+  --filter-start: brightness(1.15) contrast(1.2) saturate(1.3)
+    hue-rotate(180deg);
   --filter-clean: grayscale(1) brightness(1.25) contrast(1.15);
   --filter-fear: sepia(0.6) hue-rotate(320deg) saturate(1.4) brightness(1.1);
   --filter-ideal: hue-rotate(30deg) saturate(1.7) brightness(1.15) contrast(1.1);
   --filter-strategy1: grayscale(0.5) blur(0.8px) brightness(1.05) contrast(1.05);
-  --filter-strategy2: hue-rotate(250deg) saturate(1.3) brightness(1.1) contrast(1.1);
-  --filter-strategy3: hue-rotate(100deg) saturate(1.2) brightness(1.1) contrast(1.1);
+  --filter-strategy2: hue-rotate(250deg) saturate(1.3) brightness(1.1)
+    contrast(1.1);
+  --filter-strategy3: hue-rotate(100deg) saturate(1.2) brightness(1.1)
+    contrast(1.1);
   --filter-final: saturate(1.8) brightness(1.2) contrast(1.2) hue-rotate(10deg);
 }
